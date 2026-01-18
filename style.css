@@ -33,7 +33,7 @@ hr{
     color: white;
     border: none;
     border-radius: 1rem;
-    padding: 5px 10px;
+    padding: 10px 20px;
     cursor: pointer;
 }
 
@@ -54,7 +54,7 @@ header{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 10px 0;
+    padding: 20px 0;
 }
 
 .nav-menu ul{
@@ -68,9 +68,16 @@ header{
     color: rgb(27, 255, 27);
 }
 
+.TechWave{
+    width: 220px;
+}
+
+.menu-bar{
+    display: none;
+}
+
 /* Hero */
 .Hero{
-    max-width: 1600px;
     background-image: url("./assets/hero-bg.png");
     background-size: cover;
     background-position: center center;
@@ -91,14 +98,14 @@ header{
 
 .microphone{
     position: absolute;
-    top: 250px;
-    left: 635px;
+    top: 260px;
+    left: 46%;
 }
 
 .new{
     position: absolute;
-    top: 180px;
-    left: 780px;
+    top: 190px;
+    left: 56%;
     background-color: rgb(2, 172, 2);
     padding: 5px 10px;
     border-radius: 1rem;
@@ -108,12 +115,13 @@ header{
 .hero-title{
     font-size: 60px;
     font-weight: bolder;
-    margin-bottom: 5px;
+    margin: 55px 0 0;
+    margin-bottom: 2rem;
 }
 
 .hero-discription{
     font-size: 1rem;
-    margin-bottom: 1rem;
+    margin-bottom: 2rem;
 }
 
 .hero-bottom{
@@ -126,9 +134,10 @@ header{
 .green{
     background: none;
     color: rgb(0, 255, 0);
-    padding: 5px 10px;
+    padding: 10px 20px;
     border: 1px solid rgb(0, 255, 0);
     border-radius: 1rem;
+    cursor: pointer;
 }
 
 
@@ -166,7 +175,7 @@ header{
 .about-bottom{
     margin-top: 50px;
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(4, 30%);
 }
 
 .card-title{
@@ -233,3 +242,264 @@ header{
     grid-column: 1/span 2;
 }
 
+/* Featured */
+
+
+.feature{
+    width: 80%;
+    margin: 50px auto 100px;
+    text-align: center;
+}
+
+.feature-title{
+    font-size: 38px;
+    font-weight: bold;
+    margin: 100px 0 50px;
+}
+
+.feaure-card{
+    width: 350px;
+    background-color: #250D44;
+    border-radius: 1rem;
+}
+
+.feature-card-discription{
+    padding: 2rem;
+    text-align: start;
+    width: 100%;
+}
+
+iframe{
+    width: 100%;
+    border-radius: 1rem 1rem 0 0;
+}
+
+.Video-title{
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+.videos-time{
+    margin-top: 1rem;
+}
+
+.videos-time p{
+    color: rgb(0, 255, 0);
+}
+
+.feature-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* Host */
+.host{
+    width: 80%;
+    margin: 0 auto 100px;
+    background-color: #1A0B2E;
+    text-align: center;
+}
+
+.host-title{
+    font-size: 38px;
+    font-weight: bold;
+    margin-bottom: 50px;
+}
+
+.host-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-align: start;
+    gap: 50px;
+    padding: 20px 50px;
+}
+
+.host-name{
+    font-size: 22px;
+    margin-bottom: 1rem;
+}
+
+.host-discription{
+    margin-bottom: 1rem;
+}
+
+.icons{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.icons img{
+    padding: 10px; 
+    border: 1px solis gray;
+}
+
+.in,
+.x,
+.ins,
+.youtube{
+    border: 1px solid gray;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+/* Footer */
+.footer{
+    background-image: url(./assets/footer-bg.png);
+    background-size: cover;
+    background-position: center center;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    padding: 50px 0;
+}
+
+.links{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    margin: 20px 0;
+}
+
+.links p{
+    cursor: pointer;
+}
+
+.links p:hover{
+    color: rgb(0, 255, 0);
+}
+
+
+@media screen and (max-width:576px) {
+    .nav-menu{
+        display: none;
+    }
+
+    .navbar button{
+        display: none;
+    }
+
+    .menu-bar{
+        display: inline;
+    }
+
+    .TechWave{
+        width: 137px;
+    }
+
+    .circle-image img {
+        width: 200px;
+        height: 200px;
+    }
+
+    .Hero {
+        background-image: url("./assets/hero-bg.png");
+        background-size: cover;
+        background-position: center;
+    }
+
+    .microphone {
+        top: 200px;
+        left: 43%;
+    }
+
+    .microphone img{
+        width: 80px;
+    }
+
+    .hero-discription {
+        width: 80%;
+        margin: 0 auto 20px;
+    }
+
+    .new {
+        top: 190px;
+        left: 60%;
+    }
+
+    .hero-bottom {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 3rem;
+    }
+
+    .about {
+        margin: 0px auto 50px;
+    }
+
+    .about-top {
+        width: 90%;
+    }
+
+    .about-bottom {
+        grid-template-columns: repeat(2, 57%);
+        gap: 30px;
+    }
+
+    .Choose-box {
+        width: 90%;
+    }
+
+    .box-container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .feature {
+        width: 90%;
+        margin: 0px auto 50px;
+        text-align: center;
+    }
+
+    .feature-container {
+        flex-direction: column;
+    }
+
+    .feaure-card {
+        width: 100%;
+    }
+
+    .feature-container {
+        gap: 20px;
+    }
+
+    .host-title {
+        margin-bottom: 0px;
+    }
+
+    .host {
+        width: 90%;
+        margin: 0 auto 50px;
+    }
+
+    .host-container {
+        margin-top: 30px;
+        flex-direction: column;
+        text-align: center;
+        gap: 50px;
+        padding: 20px 50px;
+        background-color: #351165;
+    }
+
+    .icons {
+        justify-content: center;
+    }
+
+    .footer img{
+        width: 219px;
+    }
+
+    .links {
+        width: 255px;
+        flex-wrap: wrap;
+        gap: 20px;
+        margin: 20px auto;
+    }
+}
