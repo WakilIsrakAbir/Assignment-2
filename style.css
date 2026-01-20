@@ -41,6 +41,18 @@ hr{
     background-image: linear-gradient(to top right, #8646ec, #b117e0 , #c831f7);
 }
 
+@keyframes bounce {
+    0%{
+        transform: scale(1);
+    }
+    50%{
+        transform: scale(1.05);
+    }
+    100%{
+        transform: scale(1);
+    }
+}
+
 /* Header */
 /* navbar */
 header{
@@ -102,6 +114,10 @@ header{
     /* left: 46%; */
 }
 
+.microphone img{
+    animation: bounce 1.2s ease-in-out infinite;
+}
+
 .new{
     position: absolute;
     top: 190px;
@@ -110,6 +126,7 @@ header{
     padding: 5px 10px;
     border-radius: 1rem;
     color: black;
+    animation: bounce 1.2s ease-in-out infinite;
 }
 
 .hero-title{
